@@ -19,8 +19,6 @@ using namespace std;
  * (ai,j + ai,j−1 + ai,j+1 + ai−1,j + ai+1,j)/5 > 6
 */
 
-void presentacion_matriz (int*);
-
 main()
 {
     int i, j;
@@ -37,7 +35,7 @@ main()
         cout << "\nIngreso un numero que no esta en el rango permitido para hacer la prueba.\n" <<endl;
     }
 
-    if ((i == 1 && (j >= 1 && j <= 8))||(i == 6 && (j >= 1 && j <= 8))||((i >= 2 && i <= 5) && j == 1)||(((i >= 2 && i <= 5) && j == 8)))
+    else if ((i == 1 && (j >= 1 && j <= 8))||(i == 6 && (j >= 1 && j <= 8))||((i >= 2 && i <= 5) && j == 1)||(((i >= 2 && i <= 5) && j == 8)))
     {
         cout << "\nEl elemento a" << i << j << " no representa una estrella.\n" <<endl;
     }
@@ -65,3 +63,20 @@ main()
         cout << "\nEl elemento a" << i+1 << j+1 << " no representa una estrella.\n" <<endl;
     }
 }
+
+/*
+ * Para empezar declaramos tres variables dos tipo int y la restante tipo float:
+ *          -> i: Esta es una variable tipo int y sera un valor ingresado por el usuario para saber a que fila del vector dirigirnos.
+ *          -> j: Esta variable de tipo int correspondera a un valor ingresado por el usuario para saber a que columna va a pertenecer el numero que vamos a evaluar.
+ *          -> resultado: Esta es una variable tipo float la cual va a tener el valor del resultado de una formula predeterminada.
+ *
+ * El siguiente paso es pedirle al usuario que ingrese los valores necesarios para realizar el proceso del programa.
+ *
+ * Luego vamos a definir un if y un else if como prevencion para ciertos errores que pueden darse dependiendo de ciertos valores que pueda ingresar el ususario e imprimir lo que corresponda
+ * en cualquiera de estos casos.
+ *
+ * A continuacion vamos a restarle uno al valor de i y de j y vamos definir una variable tipo float llamda matriz que sera un vector y sera de tamaño [6][8] y luego se actualizara el valor
+ * de la variable resultado despues de realizarse el proceso de la formula.
+ *
+ * Para terminar se entra a unos condicionales (if y else) y dependiendiendo del valor de la variable resultado imprimiran diferentes cosas en pantalla.
+*/

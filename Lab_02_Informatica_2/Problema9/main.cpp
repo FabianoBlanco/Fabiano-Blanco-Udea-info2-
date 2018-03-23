@@ -71,3 +71,25 @@ int trad_num(char *cadena_nums)
     return numero_tras;
 }
 
+/*
+ * Primero definimos una funcion que va a recibir un puntero tipo int y va a retornar un na variable tipo int, esta funcion cumplira la funcion de "convertir" la cadena de caracteres
+ * ingresada de char a int para poder realizar el trabajo de nuestro programa.
+ *
+ * En la funcion principal del programa empezamos declarando cinco variables, una tipo char y las cuatro restantes tipo int:
+ *          -> cadena_nums[limit]: Esta variable va a almacenar los caracteres ingresados por el usuario para ser "traducidos" a tipo int.
+ *          -> n: Este es el numero de caracteres que va a tener cada grupo y tambien es ingresado el valor por el usuario.
+ *          -> numero: Obtendra su valor al ingresar la cadena de caracteres de cadena_nums a la funcion que hemos creado y esta retorne el producto de la misma.
+ *          -> modulo_division: Esta variable empieza teniendo el valor de 1 aunque incrementara en un ciclo que se encuentra más adelante en el programa.
+ *          -> suma: Empieza sindo igual a 0 aunque ira aumentando dependiendo de los numeros que se le sumen.
+ *
+ * Luego de hacer esto le pedimos al usuario que ingrese los valores que necesitamos para poder realizar el proceso del programa, el paso siguiente es dalre su valor correspondiente a
+ * la variable numero e imprimiremos en pantalla con un mensaje el numero que se ha ingresado ya "convertido" en int.
+ *
+ * Despues ingresamos al primer cilo del programa en donde vamos a ir aumentando el valor de la variable modulo_division multiplicanola por 10 en cada iteracion mientra i sea menor que
+ * la variable n.
+ *
+ * Al terminar esto entramos al segundo y ultimo ciclo del programa el cual va a ir aumentando al variable suma al ir le sumando a su valor el resultado del modul entre la variable numero
+ * y la variable modulo_division y disminuyendo el valor de la variable numero al dividir en cada iteracion su valor entre el valor de la variable modulo_division.
+ *
+ * Para concluir imprimimos el resultado acompañado con un mensaje el valor de la variable suma en pantalla.
+*/
